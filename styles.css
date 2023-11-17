@@ -17,6 +17,7 @@ body{
   background-color: #FFF;
   border-radius: 12px;
   font-family: Montserrat;
+  box-sizing: border-box;
   
   
 }
@@ -27,11 +28,13 @@ body{
   background: #000 url(image-product-mobile.jpg) center center no-repeat;
   background-size:cover;
   border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
   
 }
 
 .content{
   margin: 28px;
+  box-sizing: border-box;
 }
 
 .content h1{
@@ -129,11 +132,13 @@ a{
   color: #000;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 600px) {
   .main-container{
-    width: 1200px ;
-    height: 800px;
+    min-width: 800px ;
+    height: 600px;
     display: flex;
+    margin: 100px auto;
+    
    
     
   }
@@ -141,43 +146,40 @@ a{
   .header-image{
     background: #FFF url(image-product-desktop.jpg) center center no-repeat;
     height: 100%;
-    width: 100%;
+    width: 60%;
     border-radius: 10px 0 0 10px;
+    background-size: cover;
+    
   }
   
   .content{
-    width: 100%;
+    width: 40%;
     margin: 50px;
+   
+    
+    
   }
   
-  .content h1{
-    font-size: 28px;
-  }
   
   .content h2{
-  font-size: 70px;
   margin-top: 15px;
-  width: 80%;
+  font-size: 40px;
   
     
   }
   
   .description{
     margin-top: 20px;
-    font-size: 28px;
-    width: 80%;
+    font-size: 16px;
     
     
-    line-height: 35px;
+    line-height: 30px;
     
   }
   
-  .prices{
-    
-  }
   
   #slash-off-price{
-    font-size: 55px;
+    font-size: 40px;
   }
   
   #original-price{
